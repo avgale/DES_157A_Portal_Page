@@ -104,3 +104,23 @@ section a:hover {
 section ul {
     padding-left: 1em;
 }
+
+#gears {
+    margin: 0 5% 5% 5%;
+    height: 300px;
+    position: relative;
+}
+
+#large-gear {
+    position: absolute;
+    top: 0%;
+    left: calc(50% - 50px);
+    width: 200px;
+}
+
+#small-gear {
+    position: absolute;
+    top: 47%;
+    left: calc(50% - 128px);
+    width: 140px;
+}
