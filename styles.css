@@ -12,3 +12,49 @@ img {
     height: auto;
     display: block;
 }
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+h1 {
+    font-family: "Gabarito", serif;
+    font-weight: 600;
+    color: #7A9CFF;
+    padding: 0.25em 0;
+}
+
+h2 {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+ul li {
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+    line-height: 2em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+    background-color: #AEC3FF;
+    font-weight: 600;
+    color: white;
+    line-height: 1.5em;
+}
+
+footer a {
+    color: white;
+}
