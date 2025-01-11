@@ -118,9 +118,26 @@ section ul {
     width: 200px;
 }
 
+#gears:hover #large-gear {
+    animation: spin 3s linear infinite forwards;
+}
+
 #small-gear {
     position: absolute;
     top: 47%;
     left: calc(50% - 128px);
     width: 140px;
+}
+
+#gears:hover #small-gear {
+    animation: spin 2s linear infinite reverse;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
 }
