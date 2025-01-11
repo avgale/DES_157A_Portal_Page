@@ -141,3 +141,76 @@ section ul {
         transform: rotate(360deg)
     }
 }
+
+@media only screen and (min-width: 600px) {
+    header {
+        h1 {
+            text-align: left;
+            padding-left: 5%;
+        }
+        
+        h2 {
+            text-align: left;
+            padding-left: 5%;
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+
+    #content {
+        order: -1;
+        display: grid;
+        grid-template:
+            "a b"
+            "a b"
+            "a d"
+            "a d"
+            "c d"
+            "c d";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px 20px;
+        padding-left: none;
+    }
+
+    #research {
+        grid-area: a;
+    }
+
+    #madlibs {
+        grid-area: b;
+    }
+
+    #every-picture {
+        grid-area: c;
+    }
+
+    #game-on {
+        grid-area: d;
+    }
+
+    #gears {
+        order: 1;
+    }
+
+    section {
+        margin: 0;
+        padding: 1em;
+    }
+
+    #large-gear {
+        top: -20%;
+        left: calc(50% - 80px);
+        width: 300px;
+    }
+    
+    #small-gear {
+        top: 51%;
+        left: calc(50% - 188px);
+        width: 200px;
+    }
+}
