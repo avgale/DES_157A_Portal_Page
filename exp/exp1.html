@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Open the console to see the code functionality.</h2>
+
+    <script>
+        // This program prints a 7-row right triangle constructed out of pound signs
+        var currLine = "";
+        var numRows = 7;
+
+        // This selection checks that the number of rows is the expected number, 7
+        if (numRows != 7) {
+            console.log("Wrong number of rows!");
+        }
+
+        // This is a loop
+        for (var i=0; i<numRows; i++) {
+            // This sequence appends a pound sign for each iteration of the loop, and then prints the row
+            currLine += "#";
+            console.log(currLine);
+        }
+
+    </script>
+</body>
+</html>
