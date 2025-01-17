@@ -1,0 +1,114 @@
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+h1 {
+    font-family: "Gabarito", serif;
+    font-weight: 600;
+    color: #7A9CFF;
+    padding: 0.25em 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: medium;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: medium;
+    color: black;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+ul li {
+    font-weight: 300;
+}
+
+header {
+    padding: 1.5em 0;
+    line-height: 2em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+    background-color: #AEC3FF;
+    font-weight: 600;
+    color: white;
+    line-height: 1.5em;
+}
+
+footer a {
+    color: white;
+}
+
+article {
+    background-color: rgb(122,156,255,0.2);
+    margin: 5%;
+    padding: 4%;
+    border-radius: 10px;
+    line-height: 1.5em;
+}
+
+article a {
+    color: #7A9CFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+article a:hover {
+    color: #6183ea;
+}
+
+#portal-page-button {
+    text-decoration: none;
+    background-color: #7A9CFF;
+    border-radius: 5px;
+    margin-top: 0.75em;
+    padding: 1em;
+}
+
+#portal-page-button:hover {
+    background-color: #6183ea;
+}
+
+@media only screen and (min-width: 600px) {
+    main {
+        margin: auto;
+        max-width: 800px;
+    }
+
+    article {
+        margin: 2em;
+        padding: 4%;
+    }
+
+    article:first-of-type {
+        margin-top: 0;
+    }
+}
