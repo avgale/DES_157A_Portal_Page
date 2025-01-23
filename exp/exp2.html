@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <p id="greeting">Hi there!</p>
+
+    <p id="decor">Here are some decorations.</p>
+
+    <div id="tree"></div>
+
+    <script>
+        /* 
+         * My script prompts the user for their name and greets them.
+         * The script also changes the decor content on the page by
+         * overwritting "Here are some decorations" with some decor 
+         * examples from an array. After, the script generates a tree
+         * made up of asterisks and displays it on the page. A random
+         * number is used to generate a random shade of green in the
+         * generateColor function. Finally, the tree's color is changed
+         * to the generated color.
+         */
+
+        function randomInt(min, max) {
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            var roundedRandomVal = Math.floor(randomVal);
+            var finalNum = min + roundedRandomVal;
+            return finalNum;
+        }
+
+        function generateColor(int) {
+            var color = `#1a8f3${rand}`;
+            return color;
+        }
+
+        // Greet the user
+        var name = prompt("What is your name?");
+        document.querySelector('#greeting').innerHTML = `Hi ${name}, welcome!`;
+
+        // Replace decor content
+        var decor = ["stars", "snowflakes", "pinecones"];
+        document.querySelector('#decor').innerHTML = `You can decorate your tree with ${decor[0]}, ${decor[1]}, and ${decor[2]}.`;
+
+        // Construct the tree
+        var tree = [];
+        var currLine = "";
+
+        for (var i = 0; i < 7; i++) {
+            currLine += "#";
+            tree.push(currLine);
+        }
+
+        // Display the tree
+        var currContent = document.querySelector('#tree').innerHTML;
+
+        for (var i = 0; i < 7; i++) {
+            document.querySelector('#tree').innerHTML = `<p>${currContent}\n${tree[i]}</p>`;
+            currContent = document.querySelector('#tree').innerHTML;
+        }
+
+        // Recolor the tree
+        var rand = randomInt(0,9);
+        document.querySelector('#tree').style.color = generateColor(rand);
+
+    </script>
+</body>
+</html>
