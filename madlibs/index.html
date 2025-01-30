@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadtrip Madlibs</title>
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Maven+Pro&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1><span id="roadtrip">Roadtrip </span><span id="madlibs">Madlibs</span></h1>
+        </header>
+
+        <main>
+            <section id="input">
+                <form>
+                    <label>Enter an adjective: <input type="text"></label>
+                    <label>Enter a name: <input type="text"></label>
+                    <label>Pick a location: 
+                        <select>
+                            <option value = "Norway">Norway</option>
+                            <option value = "Norway">Peru</option>
+                            <option value = "Norway">Greece</option>
+                            <option value = "Norway">Antarctica</option>
+                        </select>
+                    </label>
+                    <label>Enter a location: <input type="text"></label>
+                    <label>Enter an adverg <input type="text"></label>
+                    <label>Enter a noun: <input type="text"></label>
+                    <label>Enter a noun: <input type="text"></label>
+                    <label>Enter a verb: <input type="text"></label>
+                    <label>Pick a location: 
+                        <select>
+                            <option value = "Norway">Grand Canyon</option>
+                            <option value = "Norway">Tower of Pisa</option>
+                            <option value = "Norway">Golden Gate Bridge</option>
+                            <option value = "Norway">Pantheon</option>
+                        </select>
+                    </label>
+
+                    <input id="submit-btn" type="submit" name="send" value="Submit">
+                </form>
+            </section>
+
+            <section id="result">
+                <p>Exciting news! You and your [adjective] friend [name] are going on a roadtrip from [location] to [location]. You have [adverb] packed your belongings and start your journey, only to realize you forgot your [noun]. Oh well - you can just use a [noun] instead. You can’t wait to send your family photos of the two of you [verb] at the [location]. What a thrilling adventure!</p>
+            </section>
+            <button id="restart-btn">Restart</button>
+        </main>
+    </div>
+
+</body>
+</html>
