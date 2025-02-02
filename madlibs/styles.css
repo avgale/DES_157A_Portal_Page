@@ -24,6 +24,7 @@ body {
     background-image: url(images/bg.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 h1 {
@@ -41,13 +42,58 @@ h1 {
     font-weight: 400;
 }
 
+/* Car styling */
+#car-body {
+    position: absolute;
+    bottom: 12%;
+    width: 35%;
+    animation: driveOut 4s ease-in forwards;
+}
+
+#back-wheel {
+    position: absolute;
+    left: 13.75%;
+    bottom: 12%;
+    width: 7.25%;
+    animation: rotateTires 4s ease-in forwards;
+}
+
+#front-wheel {
+    position: absolute;
+    left: 35%;
+    bottom: 12%;
+    width: 7.25%;
+    animation: rotateTires 4s ease-in forwards;
+}
+
+/* Car animation */
+
+@keyframes driveOut {
+    0% { 
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes rotateTires {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(100vw) rotate(720deg);
+    }
+}
+
 /* Input form styling */
 
 #input {
-    display: none; /* change this */
+    /*display: none; /* change this */
     background-color: rgb(255,255,255,0.25);
     border-radius: 25px;
     padding: 1.5em;
+    /*animation: driveOut 4s ease-in forwards; should only be triggered on submission */
 }
 
 label {
@@ -86,7 +132,7 @@ input:focus, select:focus {
 /* Result styling  */
 
 #result {
-    /*display: none; /* change this */
+    display: none; /* change this */
     background-color: rgb(255,255,255,0.25);
     border-radius: 25px;
     padding: 1.5em;
@@ -96,11 +142,11 @@ input:focus, select:focus {
 }
 
 #content {
-    display: block; /* JS should change it to this when the form is submitted */
+    /*display: block; /* JS should change it to this when the form is submitted */
 }
 
 #restart-btn {
-    /*display: none;*/
+    display: none;
     border: none;
     position: relative;
     left: 50%;
