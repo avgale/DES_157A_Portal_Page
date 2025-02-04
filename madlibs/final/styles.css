@@ -47,7 +47,7 @@ h1 {
     position: absolute;
     bottom: 12%;
     width: 35%;
-    /*animation: driveOut 4s ease-in forwards;*/
+    animation: none;
     z-index: -1;
 }
 
@@ -56,7 +56,7 @@ h1 {
     left: 13.75%;
     bottom: 12%;
     width: 7.25%;
-    animation: rotateTires 4s ease-in forwards;
+    animation: none;
     z-index: -1;
 }
 
@@ -65,7 +65,7 @@ h1 {
     left: 35%;
     bottom: 12%;
     width: 7.25%;
-    animation: rotateTires 4s ease-in forwards;
+    animation: none;
     z-index: -1;
 }
 
