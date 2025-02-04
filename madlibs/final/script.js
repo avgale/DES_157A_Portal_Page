@@ -12,10 +12,14 @@
         event.preventDefault();
         processFormData(formData);
 
-        document.querySelector('#input').style.display = "none";
-        document.querySelector('#content').style.display = "block";
-        document.querySelector('#result').style.display = "block";
-        restartBtn.style.display = "block";
+        document.querySelector('#car-body').style.animation = "driveOut 4s ease-in forwards;";
+
+        setTimeout(function(){
+            document.querySelector('#input').style.display = "none";
+            document.querySelector('#content').style.display = "block";
+            document.querySelector('#result').style.display = "block";
+            restartBtn.style.display = "block";
+        }, 1000);
     });
 
     restartBtn.addEventListener('click', function() {

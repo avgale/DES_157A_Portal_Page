@@ -47,7 +47,7 @@ h1 {
     position: absolute;
     bottom: 12%;
     width: 35%;
-    animation: driveOut 4s ease-in forwards;
+    /*animation: driveOut 4s ease-in forwards;*/
     z-index: -1;
 }
 
