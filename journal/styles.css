@@ -42,6 +42,15 @@ h3 {
     text-align: left;
 }
 
+h4 {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-size: medium;
+    color: #7A9CFF;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
 ul li {
     font-weight: 300;
 }
