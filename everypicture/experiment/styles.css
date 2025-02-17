@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(186, 220, 168);
+    font-family: "Raleway", serif;
+    font-weight: 600;
+}
+
+#img1 {
+    text-align: center;
+    color: transparent;
+    position: absolute;
+    padding: 100px 70px;
+    transform: rotate(-9deg);
+    top: 138px;
+    left: 210px;
+}
+
+#img2 {
+    text-align: center;
+    color: transparent;
+    position: absolute;
+    padding: 100px 75px;
+    transform: rotate(1deg);
+    top: 71px;
+    left: 490px;
+}
+
+#img3 {
+    text-align: center;
+    color: transparent;
+    position: absolute;
+    padding: 95px 105px;
+    transform: rotate(17deg);
+    top: 145px;
+    left: 742px;
+}
+
+#img4 {
+    text-align: center;
+    color: transparent;
+    position: absolute;
+    padding: 100px 80px;
+    transform: rotate(-14deg);
+    top: 380px;
+    left: 645px;
+}
+
+#img5 {
+    text-align: center;
+    color: transparent;
+    position: absolute;
+    padding: 100px 50px;
+    transform: rotate(2deg);
+    top: 375px;
+    left: 395px;
+}
+
+#img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover {
+    color: black;
+    background-color: rgb(255,255,255,0.75);
+}
