@@ -6,7 +6,7 @@
 	const captions = [
 		'',
 		'',
-		'<div id="row1"><div class="top-left"><img src="images/monterey/geese.jpeg" alt="geese in a park"><h1 class="caption-header">Laguna Grande Regional Park</h1><p class="caption">As a child, I spent countless hours running on the grass while my parents warned me not to get too close to the geese. This particular park has cypresses with particularly low-hanging branches that made a perfect climbing structure for a toddler.</p></div><div class="top-right"><img src="images/monterey/beach.jpeg" alt="beach in monterey"></div></div><div id="row2"><div class="bottom-left"><img src="images/monterey/seals.jpeg" alt="seals in monterey"></div><div class="bottom-right"><img src="images/monterey/tree.jpg" alt="A tree with flowers"></div>',
+		'<div id="row1"><div class="top-left"><img src="images/monterey/geese.jpeg" alt="geese in a park"><h1 class="caption-header">Monterey Bay Park</h1><p class="caption">As a child, I spent countless hours running on the grass while my parents warned me not to get too close to the geese. This particular park has cypresses with particularly low-hanging branches that made a perfect climbing structure for a toddler.</p></div><div class="top-right"><img src="images/monterey/beach.jpeg" alt="beach in monterey"><h1 class="caption-header">Monterey Beach</h1><p class="caption">I spent many hours building sand castles and wading in the water while giggling with my sister.</p></div></div><div id="row2"><div class="bottom-left"><img src="images/monterey/seals.jpeg" alt="seals in monterey"><h1 class="caption-header">Coast Guard Pier</h1><p class="caption">I distinctly remember the pungent smell of sea lions that I encountered seasonally, year after year.</p></div><div class="bottom-right"><img src="images/monterey/tree.jpg" alt="A tree with flowers"><h1 class="caption-header">Monterey State Historic Park</h1><p class="caption">Almost daily, my parents and I would pass through this historic area and admire the gardens when going for a walk.</p></div>',
 		'<div id="row1"><div class="top-left"><img src="images/hmb/muir.jpeg" alt="muir woods"></div><div class="top-right"><img src="images/hmb/castle-rock.jpeg" alt="castle rock state park"></div></div><div id="row2"><div class="bottom-left"><img src="images/hmb/beach.jpg" alt="half moon bay beach"></div><div class="bottom-right"><img src="images/hmb/sunset.jpeg" alt="half moon bay sunset"></div></div>',
 		'<div id="row1"><div class="top-left"><img src="images/slovenia/triglav-1.jpeg" alt="julian alps"></div><div class="top-right"><img src="images/slovenia/forest.jpeg" alt="alpine forest"></div></div><div id="row2"><div class="bottom-left"><img src="images/slovenia/triglav-3.jpeg" alt="julian alps"></div><div class="bottom-right"><img src="images/slovenia/triglav-2.jpeg" alt="julian alps"></div></div>',
 		'<div id="row1"><div class="top-left"><img src="images/davis/berryessa.jpeg" alt="lake berryessa"></div><div class="top-right"><img src="images/davis/putah.jpeg" alt="putah creek"></div></div><div id="row2"><div class="bottom-left"><img src="images/davis/rainbow.jpeg" alt="lake tahoe"></div><div class="bottom-right"><img src="images/davis/dardanelle.jpeg" alt="lake dardanelle"></div></div>',
@@ -59,7 +59,7 @@
 
 			if (counter != prevCounter) {
 				document.querySelector('#bg').className = 'sect' + counter;
-				
+
 				if (document.querySelector('#bg').className != 'sect1') {
 					setTimeout(function () {
 						document.querySelector('#note').style.display = 'block';
