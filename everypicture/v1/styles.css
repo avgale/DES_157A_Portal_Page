@@ -82,19 +82,20 @@ figure {
 	
 }
 figure figcaption{
-	width: 60%;
+	width: 55%;
 	position: absolute;
 	left: 50%;
 	top: 200%;
 	transform: translateX(-50%);
 }
 
-#polaroids {
-	display: grid;
-	grid-template-areas: 
-		"a a a b b b b"
-		"c c c c d d d";
+#row1, #row2 {
+	display: flex;
 	gap: 20px;
+}
+
+#row1 {
+	margin-bottom: 20px;
 }
 
 div > img {
@@ -107,23 +108,15 @@ div > img {
 	/*border: 15px solid white;
 	border-bottom: 70px solid white;*/
 	background-color: white;
-	top: -200%;
+	padding: 10px 10px 4em 10px;
 }
 
-.top-left {
-	grid-area: a;
+.top-left, .bottom-right {
+	flex: 2.5;
 }
 
-.top-right {
-	grid-area: b;
-}
-
-.bottom-left {
-	grid-area: c;
-}
-
-.bottom-right {
-	grid-area: d;
+.top-right, .bottom-left {
+	flex: 3.5;
 }
 
 .animate {
@@ -134,12 +127,12 @@ div > img {
 
 .enterup {
 	animation-name: enterup;
-	animation-delay: 2s;	
+	animation-delay: 1.5s;	
 }
 
 .enterdown {
 	animation-name: enterdown;
-	animation-delay: 2s;
+	animation-delay: 1.5s;
 }
 
 .exitup {
