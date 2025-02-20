@@ -98,12 +98,12 @@ figure figcaption{
 	transform: translateX(-50%);
 }
 
-#row1, #row2 {
+.row1, .row2 {
 	display: flex;
 	gap: 20px;
 }
 
-#row1 {
+.row1 {
 	margin-bottom: 20px;
 }
 
