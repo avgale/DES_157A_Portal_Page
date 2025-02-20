@@ -1,0 +1,215 @@
+/* Resets */
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+}
+
+/* Custom styling */
+
+body {
+	font-family: "Montserrat";
+	font-weight: 300;
+}
+
+header {
+	width: 30vw;
+	padding: 1em;
+	position: fixed;
+	background-color: white;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 4ch;
+	margin: 0.25em 0em;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 3ch;
+}
+
+main {
+	width: 30vw;
+	padding: 20px 3em 20px 20px;
+}
+
+h3 {
+	font-weight: 600;
+	margin: 0.5em 0em;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+figure {
+	display: block;
+	margin: 0;
+	width: 70vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	right:0;
+	overflow: hidden;
+}
+
+#bg {
+	position: absolute;
+	transition: all 3s ease;
+}
+
+.sect1{
+	width: 100vw;
+	top:0;
+	left: 70%;
+	transform:translateX(-50%);
+	
+}
+figure figcaption{
+	width: 55%;
+	position: absolute;
+	left: 50%;
+	top: 200%;
+	transform: translateX(-50%);
+}
+
+#row1, #row2 {
+	display: flex;
+	gap: 20px;
+}
+
+#row1 {
+	margin-bottom: 20px;
+}
+
+div > img {
+	display: block;
+	max-width: 100%;
+}
+
+.top-left, .bottom-left, .top-right, .bottom-right {
+	max-width: 100%;
+	/*border: 15px solid white;
+	border-bottom: 70px solid white;*/
+	background-color: white;
+	padding: 10px 10px 4em 10px;
+}
+
+.top-left, .bottom-right {
+	flex: 2.5;
+}
+
+.top-right, .bottom-left {
+	flex: 3.5;
+}
+
+.animate {
+	animation-duration: 700ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.enterup {
+	animation-name: enterup;
+	animation-delay: 1.5s;	
+}
+
+.enterdown {
+	animation-name: enterdown;
+	animation-delay: 1.5s;
+}
+
+.exitup {
+	animation-name: exitup;
+}
+
+.exitdown {
+	animation-name: exitdown;
+}
+
+@keyframes enterup {
+	0%{
+		top: 200%;
+	}
+	100% {
+		top: 12%;
+	}
+}
+
+@keyframes enterdown {
+	0%{
+		top: -200%;
+	}
+	100% {
+		top: 12%;
+	}
+}
+
+@keyframes exitup {
+	0%{
+		top: 12%;
+	}
+	100% {
+		top: -200%;
+	}
+}
+
+@keyframes exitdown {
+	0%{
+		top: 12%;
+	}
+	100% {
+		top: 200%;
+	}
+}
+
+.sect2,
+.sect3,
+.sect4,
+.sect5,
+.sect6{
+    width: 3768px;
+}
+
+.sect2 {
+    top: -95vh;
+    left: 0;
+}
+
+.sect3 {
+    top: -90vh;
+    left: 0;
+}
+
+.sect4 {
+	top: -75vh;
+    left: -95vw;
+}
+
+.sect5 {
+    top: -85vh;
+    left: 0;
+}
+
+.sect6 {
+    top: -65vh;
+    left: 0;
+}
+
+
