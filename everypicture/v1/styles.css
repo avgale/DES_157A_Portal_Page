@@ -85,7 +85,7 @@ figure figcaption{
 	width: 60%;
 	position: absolute;
 	left: 50%;
-	top: 25%;
+	top: 200%;
 	transform: translateX(-50%);
 }
 
@@ -107,6 +107,7 @@ div > img {
 	/*border: 15px solid white;
 	border-bottom: 70px solid white;*/
 	background-color: white;
+	top: -200%;
 }
 
 .top-left {
