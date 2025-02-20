@@ -125,6 +125,10 @@ div > img {
 	color: black;
 }
 
+.top-left:hover .caption, .bottom-left:hover .caption, .top-right:hover .caption, .bottom-right:hover .caption {
+	display: block;
+}
+
 .top-left, .bottom-right {
 	flex: 2.5;
 }
@@ -141,6 +145,7 @@ div > img {
 
 .caption {
 	font-size: 0.5em;
+	display: none;
 }
 
 .animate {
