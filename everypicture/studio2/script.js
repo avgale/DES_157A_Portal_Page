@@ -59,6 +59,12 @@
 
 			if (counter != prevCounter) {
 				document.querySelector('#bg').className = 'sect' + counter;
+				
+				if (document.querySelector('#bg').className != 'sect1') {
+					setTimeout(function () {
+						document.querySelector('#note').style.display = 'block';
+					}, 2600);
+				}
 
 				//if the user is scrolling down
 				if (counter > prevCounter) {
@@ -85,6 +91,7 @@
 				});
 
 				prevCounter = counter;
+				document.querySelector('#note').style.display = 'none';
 			}
 
 		}); // end window scroll function

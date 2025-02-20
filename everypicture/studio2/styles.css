@@ -74,6 +74,15 @@ figure {
 	transition: all 3s ease;
 }
 
+#note {
+	display: none;
+	position: absolute;
+	width: 150px;
+	top: 4%;
+	left: 70%;
+	z-index: 1;
+}
+
 .sect1{
 	width: 100vw;
 	top:0;
