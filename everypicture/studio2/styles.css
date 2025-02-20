@@ -82,7 +82,7 @@ figure {
 	
 }
 figure figcaption{
-	width: 55%;
+	width: 60%;
 	position: absolute;
 	left: 50%;
 	top: 200%;
@@ -105,10 +105,15 @@ div > img {
 
 .top-left, .bottom-left, .top-right, .bottom-right {
 	max-width: 100%;
-	/*border: 15px solid white;
-	border-bottom: 70px solid white;*/
+	height: 300px;
 	background-color: white;
-	padding: 10px 10px 4em 10px;
+	padding: 10px;
+	overflow: scroll;
+	color: transparent;
+}
+
+.top-left:hover, .bottom-left:hover, .top-right:hover, .bottom-right:hover {
+	color: black;
 }
 
 .top-left, .bottom-right {
@@ -117,6 +122,16 @@ div > img {
 
 .top-right, .bottom-left {
 	flex: 3.5;
+}
+
+.caption-header {
+	font-weight: 500;
+	font-size: 0.75em;
+	padding: 5px 0 2px 0;
+}
+
+.caption {
+	font-size: 0.5em;
 }
 
 .animate {
@@ -148,7 +163,7 @@ div > img {
 		top: 200%;
 	}
 	100% {
-		top: 12%;
+		top: 10%;
 	}
 }
 
@@ -157,13 +172,13 @@ div > img {
 		top: -200%;
 	}
 	100% {
-		top: 12%;
+		top: 10%;
 	}
 }
 
 @keyframes exitup {
 	0%{
-		top: 12%;
+		top: 10%;
 	}
 	100% {
 		top: -200%;
@@ -172,7 +187,7 @@ div > img {
 
 @keyframes exitdown {
 	0%{
-		top: 12%;
+		top: 10%;
 	}
 	100% {
 		top: 200%;
