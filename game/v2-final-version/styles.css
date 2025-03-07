@@ -139,11 +139,13 @@ a:last-of-type {
 }
 
 #arrow1 {
-    left: calc(25% - 10px);
+    transition: 1s;
+    left: -10px;
 }
 
 #arrow2 {
-    left: calc(35% - 10px);
+    transition: 1s;
+    left: -10px;
 }
 
 .slider {

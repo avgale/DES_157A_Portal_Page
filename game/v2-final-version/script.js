@@ -59,15 +59,17 @@
 		gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
 		if (gameData.index == 0) {
 			player1Points.innerHTML = `${gameData.score[0]} points`;
+			updateSlider(1);
 		} else {
 			player2Points.innerHTML = `${gameData.score[1]} points`;
+			updateSlider(2);
 		}
 
-		checkWinningCondition();
+		checkCondition();
 
 	}
 
-	function checkWinningCondition() {
+	function checkCondition() {
 		if ((gameData.score[gameData.index] > gameData.gameWin) && (gameData.score[gameData.index] < gameData.gameEnd)) {
 			gameControl.innerHTML = `<p>Player ${(gameData.index)+1} wins!</p>
             <p>The toast is<br>perfectly<br>crunchy.</p>
@@ -103,5 +105,10 @@
 				setUpTurn();
 			});
 		}
+	}
+
+	function updateSlider(player) {
+		const arrow = document.getElementById(`arrow${player}`);
+		arrow.style.left = `calc(${((gameData.score[player-1])/40)*100}% - 10px)`;
 	}
 }());
