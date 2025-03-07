@@ -1,11 +1,15 @@
 (function(){
 	
 	"use strict";
+	console.log('reading js');
 	
 	const startGame = document.getElementById('startgame');
 	const gameControl = document.getElementById('center');
 	const player1Points = document.getElementById('points1');
 	const player2Points = document.getElementById('points2');
+
+	const diceSound = new Audio('audio/dice.mp3');
+	const sizzleSound = new Audio('audio/sizzle.mp3');
 
 	const gameData = {
 		dice: ['images/dice1.jpg', 'images/dice2.jpg', 'images/dice3.jpg', 
@@ -46,6 +50,7 @@
 	}
 
 	function throwDice(){
+		diceSound.play();
 		gameData.roll1 = Math.floor(Math.random() * 6) + 1; //using ceil could result in a zero
 		gameData.roll2 = Math.floor(Math.random() * 6) + 1;
 		gameControl.innerHTML = `<p>Player ${(gameData.index)+1}'s turn</p>`;
@@ -116,13 +121,14 @@
 	}
 
 	function updateToast(player) {
+		sizzleSound.play();
 		const toast = document.getElementById(`toast${player}`);
 		const score = gameData.score[player-1];
-		if ((score > 0) && (score <= 10)) {
+		if ((score > 0) && (score < 10)) {
 			toast.src = 'images/raw.svg';
-		} else if ((score > 10) && (score <= 25)) {
+		} else if ((score >= 10) && (score < 25)) {
 			toast.src = 'images/light.svg';
-		} else if ((score > 25) && (score <= 30)) {
+		} else if ((score >= 25) && (score <= 30)) {
 			toast.src = 'images/perfect.svg';
 		} else {
 			toast.src = 'images/burnt.svg';
