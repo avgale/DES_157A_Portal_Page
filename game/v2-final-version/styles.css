@@ -1,0 +1,184 @@
+/* Resets */
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+}
+
+/* Custom styling */
+
+body {
+    font-family: "Afacad", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    line-height: 0.5em;
+    font-size: 1.25em;
+}
+
+#points1, #points2 {
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    position: relative;;
+}
+
+section {
+    flex: 1;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+#player1 {
+    background-color: #FFD7D7;
+}
+
+#player2 {
+    background-color: #FFE5E5;
+}
+
+#center {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 30px;
+    text-align: center;
+    font-size: 2em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#center > p {
+    margin: 10px;
+}
+
+#center > p:last-of-type {
+    margin-bottom: 30px;
+}
+
+#dice {
+    display: flex;
+}
+
+#roll1 {
+    width: 90px;
+    margin: -10px 10px 30px 0;
+}
+
+#roll2 {
+    width: 90px;
+    margin: -10px 0 30px 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    background-color: #FFAEAE;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+a:hover {
+    background-color: #ff9a9a;
+}
+
+a:last-of-type {
+    margin-bottom: 0;
+}
+
+#toast1, #toast2 {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+#arrow1, #arrow2 {
+    position: absolute;
+    top: -20px;
+    width: 20px;
+}
+
+#arrow1 {
+    left: calc(25% - 10px);
+}
+
+#arrow2 {
+    left: calc(35% - 10px);
+}
+
+.slider {
+    width: 35vw;
+    height: 40px;
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+
+section > p {
+    margin: 5px;
+}
+
+.yellow {
+    background-color: #FFF9B8;
+    flex: 1;
+}
+
+.light-green {
+    background-color: #D1FAB8;
+    flex: 1.5;
+}
+
+.green {
+    background-color: #C3F0A7;
+    flex: 0.5;
+}
+
+.orange {
+    background-color: #FFBE81;
+    flex: 0.5;
+}
+
+.red {
+    background-color: #FF7676;
+    flex: 0.5;
+}

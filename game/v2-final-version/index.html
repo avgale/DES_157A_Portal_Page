@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Game V1</title>
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Toast Off</h1>
+        <h2>Roll to toast your bread. But careful - don’t burn the toast! </h2>
+        <br>
+        <h2>25-30 points is the sweet spot, who can get there first?</h2>
+    </header>
+
+    <main>
+        <div id="center">
+            <a id="startgame" href="#">Start game</a>
+            <!--<p>Player 1's turn</p>
+            <div id="dice">
+                <img id="roll1" src="images/dice1.jpg" alt="dice face">
+                <img id="roll2" src="images/dice3.jpg" alt="dice face">
+            </div>
+            <a id="roll" href="#">Roll dice</a>
+            <a id="pass" href="#">Pass</a>-->
+            <!--<p>Oh no!</p>
+            <p>Player 1<br>burned their<br>toast.</p>
+            <p>Player 2 wins!</p>
+            <a id="restart" href="#">Restart</a>-->
+            <!--<p>Player 1 wins!</p>
+            <p>The toast is<br>perfectly<br>crunchy.</p>
+            <a id="restart" href="#">Restart</a>-->
+        </div>
+        <section id="player1">
+            <img id="toast1" src="images/raw.svg" alt="toast">
+            <p>Player 1</p>
+            <p id="points1">0 points</p>
+            <div class="slider">
+                <img id="arrow1" src="images/arrow.svg" alt="small black arrow">
+                <div class="yellow"></div>
+                <div class="light-green"></div>
+                <div class="green"></div>
+                <div class="orange"></div>
+                <div class="red"></div>
+            </div>
+        </section>
+        <section id="player2">
+            <img id="toast2" src="images/light.svg" alt="toast">
+            <p>Player 2</p>
+            <p id="points2">0 points</p>
+            <div class="slider">
+                <img id="arrow2" src="images/arrow.svg" alt="small black arrow">
+                <div class="yellow"></div>
+                <div class="light-green"></div>
+                <div class="green"></div>
+                <div class="orange"></div>
+                <div class="red"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
