@@ -23,6 +23,7 @@
 		gameData.index = Math.round(Math.random());
 		console.log(gameData.index);
 
+		gameControl.style.height = '50vh';
 		gameControl.innerHTML = `<p>Player ${(gameData.index)+1}'s turn</p>`;
 		setUpTurn();
 	});
@@ -60,9 +61,11 @@
 		if (gameData.index == 0) {
 			player1Points.innerHTML = `${gameData.score[0]} points`;
 			updateSlider(1);
+			updateToast(1);
 		} else {
 			player2Points.innerHTML = `${gameData.score[1]} points`;
 			updateSlider(2);
+			updateToast(2);
 		}
 
 		checkCondition();
@@ -70,7 +73,7 @@
 	}
 
 	function checkCondition() {
-		if ((gameData.score[gameData.index] > gameData.gameWin) && (gameData.score[gameData.index] < gameData.gameEnd)) {
+		if ((gameData.score[gameData.index] >= gameData.gameWin) && (gameData.score[gameData.index] <= gameData.gameEnd)) {
 			gameControl.innerHTML = `<p>Player ${(gameData.index)+1} wins!</p>
             <p>The toast is<br>perfectly<br>crunchy.</p>
             <a id="restart" href="#">Restart</a>`;
@@ -110,5 +113,19 @@
 	function updateSlider(player) {
 		const arrow = document.getElementById(`arrow${player}`);
 		arrow.style.left = `calc(${((gameData.score[player-1])/40)*100}% - 10px)`;
+	}
+
+	function updateToast(player) {
+		const toast = document.getElementById(`toast${player}`);
+		const score = gameData.score[player-1];
+		if ((score > 0) && (score <= 10)) {
+			toast.src = 'images/raw.svg';
+		} else if ((score > 10) && (score <= 25)) {
+			toast.src = 'images/light.svg';
+		} else if ((score > 25) && (score <= 30)) {
+			toast.src = 'images/perfect.svg';
+		} else {
+			toast.src = 'images/burnt.svg';
+		}
 	}
 }());
